@@ -4,31 +4,32 @@
     padding-bottom: 60px;}
 .footer .container {
     display: flex;
-    align-items: baseline;
-}
-.footer__address{
-    margin-right: 70px;}
-
+    align-items: baseline;}
 address {
-    margin-top: 20px;}
+        margin-top: 20px;}
 .footer__item:not(:last-child) {
     margin-bottom: 9px;}
 .footer__contacts {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;}
-.footer__mail, .footer__tel {
-    color: var(--footer-contacts-link);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
-.footer__addres {
+.footer__addres{
+    margin-right: 70px;
     color: var(--footer-addres);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
-.footer__mail:hover, .footer__mail:focus {
-    color:var(--accent-color)}
-.footer__addres:hover, .footer__addres:focus {
-    color:var(--accent-color)}
-.footer__tel:hover, .footer__tel:focus {
-    color:var(--accent-color)}
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus {
+        color:var(--accent-color)}}
+.footer__mail {
+    color: var(--footer-contacts-link);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus {
+    color:var(--accent-color)}}
+
+.footer__tel {
+    color: var(--footer-contacts-link);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus {
+    color:var(--accent-color)}}
 
 .footer__social {
     display: flex;
@@ -48,9 +49,9 @@ address {
     align-items: center;}
 .footer__element {
     background:var(--social-link-color-2);
-    border-radius: 50%;}
-.footer__element:not(:first-child) {
-margin-left: 10px;}
+    border-radius: 50%;
+    &:not(:first-child) {
+    margin-left: 10px;}}
 .footer__link {
     width: 44px;
     height: 44px;
@@ -59,9 +60,9 @@ margin-left: 10px;}
     display: flex;
     justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border-radius: 50%;}
-.footer__link:hover, .footer__link:focus {
-    background-color: var(--accent-color);}
+    border-radius: 50%;
+    &:hover, &:focus {
+    background-color: var(--accent-color);}}
     
 .footer__mailing {
     display: flex;
@@ -91,9 +92,9 @@ margin-left: 10px;}
     padding-left: 16px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     outline: none;
-    color: var(--footer-addres)}
-.mailing-input:focus {
-    border: 1px solid var(--accent-color);}
+    color: var(--footer-addres);
+    &:focus {
+    border: 1px solid var(--accent-color);}}
 .mailing-icon {
     width: 24px;
     height: 24px;

@@ -10,36 +10,35 @@
 .portfolio__project {
     display: flex;
     flex-wrap: wrap;}
-.portfolio__design {
-    list-style: none;}
 .portfolio__link {
     display: block;
     text-decoration: none;
     color: var(--text-color);
-    transition:box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);}
-.portfolio__link:hover, .portfolio__link:focus {
+    transition:box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
                 0px 4px 4px rgba(0, 0, 0, 0.06), 
-                1px 4px 6px rgba(0, 0, 0, 0.16);}
-
-.portfolio__design:nth-child(2) {
+                1px 4px 6px rgba(0, 0, 0, 0.16);}}
+.portfolio__design {
+    list-style: none;
+&:nth-child(2) {
     margin-right: 30px;
     margin-left: 30px;}
-.portfolio__design:nth-child(5) {
+&:nth-child(5) {
     margin-right: 30px;
     margin-left: 30px;}
-.portfolio__design:nth-child(8) {
+&:nth-child(8) {
     margin-right: 30px;
     margin-left: 30px;}
-.portfolio__design:nth-child(6) {
+&:nth-child(6) {
     margin-top: 30px;
     margin-bottom: 30px;}
-.portfolio__design:nth-child(4) {
+&:nth-child(4) {
     margin-top: 30px;
     margin-bottom: 30px;}
-.portfolio__design:nth-child(5) {
+&:nth-child(5) {
     margin-top: 30px;
-    margin-bottom: 30px;}
+    margin-bottom: 30px;}}
 
 .portfolio__title {
     font-weight: 700;
