@@ -44,9 +44,7 @@ address {
     color: var(--footer-addres);
     margin-bottom: 20px;}
 .footer__media {
-    display: flex;
-    justify-content: center;
-    align-items: center;}
+    @include flexCenter(flex, center,center);}
 .footer__element {
     background:var(--social-link-color-2);
     border-radius: 50%;
@@ -56,9 +54,7 @@ address {
     width: 44px;
     height: 44px;
     fill: var(--social-icon-footer);
-    align-items: center;
-    display: flex;
-    justify-content: center;
+    @include flexCenter(flex, center,center);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 50%;
     &:hover, &:focus {
@@ -67,7 +63,7 @@ address {
 .footer__mailing {
     display: flex;
     flex-direction: column;
-    padding-left: 93px;}
+    margin-left: 93px;}
 .mailing-title {
     font-family: 'Roboto';
     font-weight: 700;
